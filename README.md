@@ -15,10 +15,9 @@ This is running on my local maching for coding and a school vpn for testing and 
 ### Prerequisites
 
 Requirements for the software and other tools to build, test and push 
-- VS Code; used for coding and debugging of code errors
-- MobaXTerm; used to deploy the code on school vpn *not needed* just need to test 
-in school environment to ensure grader has smooth running of code.
-- GCC GNU; Compiler used 
+VS Code; used for coding and debugging of code errors (https://code.visualstudio.com/Download).
+MobaXTerm; used to deploy the code on school vpn not needed just need to test in school environment to ensure grader has smooth running of code (https://mobaxterm.mobatek.net/).
+Compiler GNU GCC; (https://gcc.gnu.org/).
 
 ### Installing
 
