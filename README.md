@@ -15,8 +15,11 @@ This is running on my local maching for coding and a school vpn for testing and 
 ### Prerequisites
 
 Requirements for the software and other tools to build, test and push 
+
 VS Code; used for coding and debugging of code errors (https://code.visualstudio.com/Download).
+
 MobaXTerm; used to deploy the code on school vpn not needed just need to test in school environment to ensure grader has smooth running of code (https://mobaxterm.mobatek.net/).
+
 Compiler GNU GCC; (https://gcc.gnu.org/).
 
 ### Installing
@@ -32,6 +35,7 @@ Secondly, while MobaXTerm isn't needed, you can use that coding environment as w
 Lastly, I downloaded GCC GNU at the time, I used GNU version 10.4 in the compilation of the project.
 
 Once installations are completed, run the program and should ask for some user inputs, which if runned correctly you should be able to enter information that it is asking for. 
+
 For example; *Sample Test*
 
 
