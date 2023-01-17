@@ -1,7 +1,5 @@
 # Patient-Record-Holder.P1
 
-One Paragraph of the project description
-
 This project consist of two parts, the user input which is the "patient" and then the print which
 will print the given in a specific order at which its created. It contains plenty of prints and scanners
 that helps identify the inputs, as well as global identifiers to help with seperation of classes
