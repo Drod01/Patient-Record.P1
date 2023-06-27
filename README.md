@@ -7,8 +7,9 @@ To get started with the code, follow these steps:
 1. Clone the Repository: Start by cloning this repository to your local machine using the following command:
 
 bash
-Copy code
+
 git clone <repository-url>
+
 2. Build and Run: Use the provided Makefile to build the code and generate an executable file. Run the executable in a console environment to interact with the code and test its features.
 
 ## Description
