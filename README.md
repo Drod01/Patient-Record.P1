@@ -1,95 +1,96 @@
-# Patient-Record-Holder.P1
+Patient-Record-Keeper README
+This repository contains code that demonstrates various functionalities related to handling user information and input validation. The code is written in C programming language and is designed to be run in a console environment.
 
-This project consist of two parts, the user input which is the "patient" and then the print which
-will print the given in a specific order at which its created. It contains plenty of prints and scanners
-that helps identify the inputs, as well as global identifiers to help with seperation of classes
-and readability. Error checks are apart of the project as well as medical records need proper filling of information to 
-be in record properly. 
+Getting Started
+To get started with the code, follow these steps:
 
-## Getting Started
+Clone the Repository: Start by cloning this repository to your local machine using the following command:
 
-This is running on my local maching for coding and a school vpn for testing and quality assurance.
+bash
+Copy code
+git clone <repository-url>
+Build and Run: Use the provided Makefile to build the code and generate an executable file. Run the executable in a console environment to interact with the code and test its features.
 
-### Prerequisites
+Description
+The code in this repository provides a set of functions to handle user information and perform input validation. It allows users to enter various details such as name, address, phone number, and more. The code ensures that the input meets specific criteria and provides appropriate feedback in case of errors or invalid input.
 
-Requirements for the software and other tools to build, test and push 
+Usage
+To use the code, follow the prompts displayed in the console. The code will ask you to enter different types of information, such as first name, last name, address, phone number, and more. It will validate the input and provide feedback based on the validation results. Follow the instructions provided by the code to enter the required information accurately.
 
-VS Code; used for coding and debugging of code errors (https://code.visualstudio.com/Download).
+Example
+Here's an example of how to use the code:
 
-MobaXTerm; used to deploy the code on school vpn not needed just need to test in school environment to ensure grader has smooth running of code (https://mobaxterm.mobatek.net/).
+Clone the repository to your local machine.
 
-Compiler GNU GCC; (https://gcc.gnu.org/).
+Open a console or terminal and navigate to the project directory.
 
-### Installing
+Build the code using the provided Makefile. Execute the following command:
 
-When installing the VS Code, ensure you have the extensions for C and C+ as they are needed to run properly on VS Code,
-they can be located on the left hand side of the application once launched.
+go
+Copy code
+make
+The Makefile will compile the code and generate an executable file named project2. Run the executable by executing the following command:
 
-If additional help is needed, would recommend this video for help on extensions. 
-(https://www.youtube.com/watch?v=77v-Poud_io)
+bash
+Copy code
+./project2
+The code will display prompts for entering various details. Follow the instructions and provide the required information. For example:
 
-Secondly, while MobaXTerm isn't needed, you can use that coding environment as well to make sure it could run on another system via vpn.
+mathematica
+Copy code
+Enter your first name: John
+Enter your last name: Doe
+Enter your address: 123 Main Street
+Enter your phone number: 555-1234
+The code will validate the input and provide feedback accordingly. If there are any errors or invalid input, it will display an appropriate error message. For example:
 
-Lastly, I downloaded GCC GNU at the time, I used GNU version 10.4 in the compilation of the project.
+less
+Copy code
+Input error: Invalid phone number format. Please enter a valid phone number.
+Continue following the prompts and provide the required information until the code execution is complete.
 
-Once installations are completed, run the program and should ask for some user inputs, which if runned correctly you should be able to enter information that it is asking for. 
+Makefile
+The provided Makefile simplifies the build process for the code. It has the following targets:
 
-For example; *Sample Test*
+make: This is the default target and is used to build the code. It compiles the source file project2.c and generates an executable file named project2.
+make clean: This target cleans the project directory by removing the generated executable file and object files.
+Here's the content of the Makefile:
 
+makefile
+Copy code
+CC = gcc
+CFLAGS = -g -Wall -std=c99
+OBJECTS = project2.c
+NAME = project2
+TODELETE = $(NAME) *.o
 
+project2 : $(OBJECTS)
+    $(CC) $(CFLAGS) $(OBJECTS) -o $(NAME)
 
-### Sample Tests
+.PHONY: clean
+clean:
+    rm -f $(TODELETE)
+Dependencies
+The code has the following dependencies:
 
-"Enter your state" after entering your city name, but before entering your zipcode. 
-This is paramount as you want the information being given to be consistent with an actual patient medical record. 
+Standard C Library: The code relies on standard C library functions for string manipulation, input/output operations, and memory management.
+License
+This code is provided under the MIT License. You are free to use, modify, and distribute the code as per the terms and conditions of the license.
 
+Contribution
 
-### Style test
+Contributions to this project are welcome! If you would like to contribute, please follow these steps:
 
-While I don't use a specific coding style I believe staying true to a specific style of coding would really help with the flow of code and productivity.
+Fork the repository on GitHub.
+Create a new branch for your feature or bug fix.
+Make your changes in the branch and commit them.
+Push your branch to your forked repository.
+Submit a pull request to the original repository.
+Please ensure that your contributions adhere to the following guidelines:
 
-For example; a coding style that could be used to make the code more readable as, (at least in my opinion) could be more readable to the users. 
-
-
-## Deployment
-
-While its a local machine, you can still deploy on a vpn and no automation is present as you manually have to enter the information.
-
-## Built With
-
-  - [Contributor Covenant](https://www.contributor-covenant.org/) - Used
-    for the Code of Conduct
-  - [Creative Commons](https://creativecommons.org/) - Used to choose
-    the license
-
-## Contributing
-
-Open use on a request basis.
-
-## Versioning
-
-We use [Semantic Versioning](http://semver.org/) for versioning. For the versions
-available, see the [tags on this
-repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
-
-## Authors
-
-  - **David Roidriguez** README Author
-  - **Billie Thompson** - *Provided README Template* -
-    [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of
-[contributors](https://github.com/PurpleBooth/a-good-readme-template/contributors)
-who participated in this project.
-
-## License
-
-This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
-Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
-details
-
-## Acknowledgments
-
-  - David Rodriguez, Tucker Bilimek, Anthony, Roger
-  - Grey's Anatomy 
-
+Maintain a clear and concise coding style consistent with the existing codebase.
+Provide detailed information about the changes or additions made.
+Test your changes thoroughly to ensure they do not introduce any issues.
+Follow the existing naming conventions and code formatting.
+Be respectful and considerate towards other contributors.
+Your contributions can include bug fixes, feature enhancements, documentation improvements, or any other valuable additions to the project.
