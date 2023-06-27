@@ -1,7 +1,7 @@
-##Patient-Record-Keeper README
+## Patient-Record-Keeper README
 This repository contains code that demonstrates various functionalities related to handling user information and input validation. The code is written in C programming language and is designed to be run in a console environment.
 
-##Getting Started
+## Getting Started
 To get started with the code, follow these steps:
 
 1. Clone the Repository: Start by cloning this repository to your local machine using the following command:
